@@ -91,7 +91,7 @@ function sendGenericMessage(sender) {
                 "elements": [{
                     "title": "Ai Chat Bot Communities",
                     "subtitle": "Communities to Follow",
-                    "image_url": "http://1u88jj3r4db2x4txp44yqfj1.wpengine.netdna-cdn.com/⋯⋯",
+                    "image_url": "https://scontent-dft4-1.xx.fbcdn.net/v/t31.0-8/15800282_371563219863055_2270307156689436092_o.jpg?oh=36e3ea8551491f96587140231fbb0f3d&oe=594E9C7D",
                     "buttons": [{
                         "type": "web_url",
                         "url": "https://www.facebook.com/groups/aic⋯⋯",
