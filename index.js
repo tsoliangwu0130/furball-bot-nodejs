@@ -144,7 +144,7 @@ function sendGenericMessage(sender) {
         }
     }
     request({
-        url: 'https://graph.facebook.com/v2.6/me/⋯⋯',
+        url: 'https://graph.facebook.com/v2.8/me/messages',
         qs: {access_token:token},
         method: 'POST',
         json: {
