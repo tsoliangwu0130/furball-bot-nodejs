@@ -92,7 +92,7 @@ function sendGenericMessage(sender) {
                 "elements": [{
                     "title": "Ai Chat Bot Communities",
                     "subtitle": "Communities to Follow",
-                    "image_url": "https://scontent-dft4-1.xx.fbcdn.net/v/t31.0-8/15800282_371563219863055_2270307156689436092_o.jpg?oh=36e3ea8551491f96587140231fbb0f3d&oe=594E9C7D",
+                    "image_url": "https://www.facebook.com/furballchubbymeow/videos/266702097015835/",
                     "buttons": [{
                         "type": "web_url",
                         "url": "https://www.facebook.com/groups/aic⋯⋯",
@@ -109,7 +109,7 @@ function sendGenericMessage(sender) {
                 }, {
                     "title": "Chatbots FAQ",
                     "subtitle": "Aking the Deep Questions",
-                    "image_url": "https://tctechcrunch2011.files.wordpress.com/⋯⋯",
+                    "image_url": "https://www.facebook.com/furballchubbymeow/videos/281560292196682/",
                     "buttons": [{
                         "type": "postback",
                         "title": "What's the benefit?",
@@ -126,7 +126,7 @@ function sendGenericMessage(sender) {
                 },  {
                     "title": "Learning More",
                     "subtitle": "Aking the Deep Questions",
-                    "image_url": "http://www.brandknewmag.com/wp-cont⋯⋯",
+                    "image_url": "https://www.facebook.com/furballchubbymeow/videos/368152226870821/",
                     "buttons": [{
                         "type": "postback",
                         "title": "AIML",
