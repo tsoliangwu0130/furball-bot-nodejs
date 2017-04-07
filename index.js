@@ -1,7 +1,10 @@
-var express = require('express')
-var bodyParser = require('body-parser')
-var request = require('request')
-var app = express()
+var express       = require('express')
+var bodyParser    = require('body-parser')
+var request       = require('request')
+var app           = express()
+var graph_api_url = 'https://graph.facebook.com/v2.8/me/messages'
+var verify_token  = 'Furball_Bot'
+var token         = 'EAASh9p8S6i8BAII9V5qHkfdAfUmYn7ESuw26Js5WMqZAIB7n6c92od04kGsxk56mDTPUAKj6Vt2rhSoFRd7mfLBvEU6u796fTwRfzTEl7wyZBQZB4BFlayE6kXFZCpTlK4y6xJ1qXgS27kVmaDqBDSdC3GjctXl74N5MaWZBcJwZDZD'
 
 app.set('port', (process.env.PORT || 5000))
 
@@ -13,12 +16,12 @@ app.use(bodyParser.json())
 
 // Index route
 app.get('/', function (req, res) {
-    res.send('Hello world, I am a chat bot')
+    res.send('Hello world, I am Furball Bot')
 })
 
 // for Facebook verification
 app.get('/webhook/', function (req, res) {
-    if (req.query['hub.verify_token'] ==='Furball_Bot') {
+    if (req.query['hub.verify_token'] === verify_token) {
         res.send(req.query['hub.challenge'])
     }
     res.send('Error, wrong token')
@@ -30,7 +33,7 @@ app.listen(app.get('port'), function() {
 })
 
 
-// API End Point - added by Stefan
+// API end point
 
 app.post('/webhook/', function (req, res) {
     messaging_events = req.body.entry[0].messaging
@@ -39,31 +42,29 @@ app.post('/webhook/', function (req, res) {
         sender = event.sender.id
         if (event.message && event.message.text) {
             text = event.message.text
-            if (text ==='hi') {
+            if (text === 'meow') {
                 sendGenericMessage(sender)
                 continue
             }
-            sendTextMessage(sender,"parrot: " + text.substring(0, 200))
+            sendTextMessage(sender, text.substring(0, 200))
         }
         if (event.postback) {
             text = JSON.stringify(event.postback)
-            sendTextMessage(sender,"Postback received: "+ text.substring(0, 200), token)
+            sendTextMessage(sender, text.substring(0, 200), token)
             continue
         }
     }
     res.sendStatus(200)
 })
 
-var token = "EAASh9p8S6i8BAII9V5qHkfdAfUmYn7ESuw26Js5WMqZAIB7n6c92od04kGsxk56mDTPUAKj6Vt2rhSoFRd7mfLBvEU6u796fTwRfzTEl7wyZBQZB4BFlayE6kXFZCpTlK4y6xJ1qXgS27kVmaDqBDSdC3GjctXl74N5MaWZBcJwZDZD"
-
-// function to echo back messages - added by Stefan
+// function to echo back messages
 
 function sendTextMessage(sender, text) {
     messageData = {
         text:text
     }
     request({
-        url: 'https://graph.facebook.com/v2.8/me/messages',
+        url: graph_api_url,
         qs: {access_token:token},
         method: 'POST',
         json: {
@@ -144,7 +145,7 @@ function sendGenericMessage(sender) {
         }
     }
     request({
-        url: 'https://graph.facebook.com/v2.8/me/messages',
+        url: graph_api_url,
         qs: {access_token:token},
         method: 'POST',
         json: {
