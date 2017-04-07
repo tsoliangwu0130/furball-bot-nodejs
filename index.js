@@ -92,7 +92,7 @@ function sendGenericMessage(sender) {
                 "elements": [{
                     "title": "Ai Chat Bot Communities",
                     "subtitle": "Communities to Follow",
-                    "image_url": "https://scontent-dft4-1.xx.fbcdn.net/v/t31.0-8/14525148_323053188047392_1446928295585830074_o.jpg?oh=9388232a3dc60f26f81a733acab8e02e&oe=5997DE62",
+                    "image_url": "https://scontent-dft4-1.xx.fbcdn.net/v/t31.0-8/17349777_408691256150251_3161583191849637124_o.jpg?oh=6e75b3b539cfd5b40053fa850a8442e5&oe=598BAA7F",
                     "buttons": [{
                         "type": "web_url",
                         "url": "https://www.facebook.com/groups/aic⋯⋯",
@@ -109,7 +109,7 @@ function sendGenericMessage(sender) {
                 }, {
                     "title": "Chatbots FAQ",
                     "subtitle": "Aking the Deep Questions",
-                    "image_url": "https://scontent-dft4-1.xx.fbcdn.net/v/t31.0-8/17349777_408691256150251_3161583191849637124_o.jpg?oh=6e75b3b539cfd5b40053fa850a8442e5&oe=598BAA7F",
+                    "image_url": "https://scontent-dft4-1.xx.fbcdn.net/v/t31.0-8/16107142_378661272486583_6814191021096657673_o.jpg?oh=7161ba75c77aacada15b551a2f99b7ad&oe=599A2E77",
                     "buttons": [{
                         "type": "postback",
                         "title": "What's the benefit?",
@@ -126,7 +126,7 @@ function sendGenericMessage(sender) {
                 },  {
                     "title": "Learning More",
                     "subtitle": "Aking the Deep Questions",
-                    "image_url": "https://scontent-dft4-1.xx.fbcdn.net/v/t1.0-9/13325614_268717953480916_3188238762114621744_n.jpg?oh=7e358c3cac2db046b5569397cf13f728&oe=59954E49",
+                    "image_url": "https://scontent-dft4-1.xx.fbcdn.net/v/t31.0-8/15800282_371563219863055_2270307156689436092_o.jpg?oh=36e3ea8551491f96587140231fbb0f3d&oe=594E9C7D",
                     "buttons": [{
                         "type": "postback",
                         "title": "AIML",
