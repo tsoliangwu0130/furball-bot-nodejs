@@ -94,51 +94,21 @@ function sendGenericMessage(sender) {
                     "subtitle": "Communities to Follow",
                     "image_url": "https://scontent-dft4-1.xx.fbcdn.net/v/t31.0-8/17349777_408691256150251_3161583191849637124_o.jpg?oh=6e75b3b539cfd5b40053fa850a8442e5&oe=598BAA7F",
                     "buttons": [{
-                        "type": "web_url",
-                        "url": "https://www.facebook.com/groups/aic⋯⋯",
-                        "title": "FB Chatbot Group"
-                    }, {
-                        "type": "web_url",
-                        "url": "https://www.reddit.com/r/Chat_Bots/",
-                        "title": "Chatbots on Reddit"
-                    },{
-                        "type": "web_url",
-                        "url": "https://twitter.com/aichatbots",
-                        "title": "Chatbots on Twitter"
+                        "type":"element_share",
                     }],
                 }, {
                     "title": "Chatbots FAQ",
                     "subtitle": "Aking the Deep Questions",
                     "image_url": "https://scontent-dft4-1.xx.fbcdn.net/v/t31.0-8/16107142_378661272486583_6814191021096657673_o.jpg?oh=7161ba75c77aacada15b551a2f99b7ad&oe=599A2E77",
                     "buttons": [{
-                        "type": "postback",
-                        "title": "What's the benefit?",
-                        "payload": "Chatbots make content interactive instead of static",
-                    },{
-                        "type": "postback",
-                        "title": "What can Chatbots do",
-                        "payload": "One day Chatbots will control the Internet of Things! You will be able to control your homes temperature with a text",
-                    }, {
-                        "type": "postback",
-                        "title": "The Future",
-                        "payload": "Chatbots are fun! One day your BFF might be a Chatbot",
+                        "type":"element_share",
                     }],
                 },  {
                     "title": "Learning More",
                     "subtitle": "Aking the Deep Questions",
                     "image_url": "https://scontent-dft4-1.xx.fbcdn.net/v/t31.0-8/15800282_371563219863055_2270307156689436092_o.jpg?oh=36e3ea8551491f96587140231fbb0f3d&oe=594E9C7D",
                     "buttons": [{
-                        "type": "postback",
-                        "title": "AIML",
-                        "payload": "Checkout Artificial Intelligence Mark Up Language. Its easier than you think!",
-                    },{
-                        "type": "postback",
-                        "title": "Machine Learning",
-                        "payload": "Use python to teach your maching in 16D space in 15min",
-                    }, {
-                        "type": "postback",
-                        "title": "Communities",
-                        "payload": "Online communities & Meetups are the best way to stay ahead of the curve!",
+                        "type":"element_share",
                     }],
                 }]  
             } 
