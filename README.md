@@ -1,8 +1,7 @@
 Furball Bot - Facebook Messenger Chatbot
 ========================================
 
-Description
------------
+### Description
 
 This simple application is implemented with [Node.js](https://nodejs.org/en/) framework and deployed on [Heroku](https://dashboard.heroku.com/) platform. The chatbot now have two main functions:
 
